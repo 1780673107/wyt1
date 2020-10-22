@@ -116,19 +116,19 @@ function html_escape(s) {
 <div class='heading'>
 <h1 style="font-family: Microsoft YaHei">快递鸟接口项目</h1>
 <p class='attribute'><strong>测试人员 : </strong> wyt</p>
-<p class='attribute'><strong>开始时间 : </strong> 2020-09-27 16:46:00</p>
-<p class='attribute'><strong>合计耗时 : </strong> 0:00:34.560000</p>
-<p class='attribute'><strong>测试结果 : </strong> 共 40，通过 32，错误 8，通过率= 80.00%</p>
+<p class='attribute'><strong>开始时间 : </strong> 2020-10-21 18:14:19</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:00:28.893000</p>
+<p class='attribute'><strong>测试结果 : </strong> 共 36，通过 36，通过率= 100.00%</p>
 
 <p class='description'>快递鸟接口项目</p>
 </div>
 
 
 <p id='show_detail_line'>
-<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 80.00% }</a>
+<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 100.00% }</a>
 <a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 0 }</a>
-<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 32 }</a>
-<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 40 }</a>
+<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 36 }</a>
+<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 36 }</a>
 </p>
 <table id='result_table' class="table table-condensed table-bordered table-hover">
 <colgroup>
@@ -148,273 +148,101 @@ function html_escape(s) {
     <td>详细</td>
 </tr>
 
-<tr class='errorClass warning'>
-    <td>test_login.LoginTestCase: 登录接口</td>
-    <td class="text-center">9</td>
-    <td class="text-center">1</td>
-    <td class="text-center">0</td>
+<tr class='passClass warning'>
+    <td>test_kuaidi.KuaidiTestCase: 快递接口</td>
     <td class="text-center">8</td>
-    <td class="text-center"><a href="javascript:showClassDetail('c1',9)" class="detail" id='c1'>详细</a></td>
+    <td class="text-center">8</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c1',8)" class="detail" id='c1'>详细</a></td>
 </tr>
 
 <tr id='pt1_1' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_case_login_1: 快递</div></td>
+    <td class='passCase'><div class='testcase'>test_case_kuaidi_1: 文捷航空速递</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
-<tr id='ft1_2' class='none'>
-    <td class='errorCase'><div class='testcase'>test_case_login_2: 密码不正确</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_ft1_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_2'>错误</button>
-    <div id='div_ft1_2' class="collapse">  -->
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_ft1_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_2'>错误</button>
-    <div id='div_ft1_2' class="collapse in" align="left">
-    <pre>
-    
-ft1_2: Traceback (most recent call last):
-  File "C:\Users\Administrator\Desktop\快递鸟接口自动化\pack_lib\ddt.py", line 145, in wrapper
-    return func(self, *args, **kwargs)
-  File "C:\Users\Administrator\Desktop\快递鸟接口自动化\testcases\test_login.py", line 47, in test_case_login
-    self.assertEqual(excepted['EBusinessID'],res['EBusinessID'])
-KeyError: 'EBusinessID'
-
-
-    </pre>
-    </div>
-    </td>
+<tr id='pt1_2' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_case_kuaidi_2: 卓志速运</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
-<tr id='ft1_3' class='none'>
-    <td class='errorCase'><div class='testcase'>test_case_login_3: 账号未注册</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_ft1_3' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_3'>错误</button>
-    <div id='div_ft1_3' class="collapse">  -->
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_ft1_3' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_3'>错误</button>
-    <div id='div_ft1_3' class="collapse in" align="left">
-    <pre>
-    
-ft1_3: Traceback (most recent call last):
-  File "C:\Users\Administrator\Desktop\快递鸟接口自动化\pack_lib\ddt.py", line 145, in wrapper
-    return func(self, *args, **kwargs)
-  File "C:\Users\Administrator\Desktop\快递鸟接口自动化\testcases\test_login.py", line 47, in test_case_login
-    self.assertEqual(excepted['EBusinessID'],res['EBusinessID'])
-KeyError: 'EBusinessID'
-
-
-    </pre>
-    </div>
-    </td>
+<tr id='pt1_3' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_case_kuaidi_3: 美国快递</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
-<tr id='ft1_4' class='none'>
-    <td class='errorCase'><div class='testcase'>test_case_login_4: 手机号为空</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_ft1_4' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_4'>错误</button>
-    <div id='div_ft1_4' class="collapse">  -->
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_ft1_4' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_4'>错误</button>
-    <div id='div_ft1_4' class="collapse in" align="left">
-    <pre>
-    
-ft1_4: Traceback (most recent call last):
-  File "C:\Users\Administrator\Desktop\快递鸟接口自动化\pack_lib\ddt.py", line 145, in wrapper
-    return func(self, *args, **kwargs)
-  File "C:\Users\Administrator\Desktop\快递鸟接口自动化\testcases\test_login.py", line 47, in test_case_login
-    self.assertEqual(excepted['EBusinessID'],res['EBusinessID'])
-KeyError: 'EBusinessID'
-
-
-    </pre>
-    </div>
-    </td>
+<tr id='pt1_4' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_case_kuaidi_4: 澳德物流</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
-<tr id='ft1_5' class='none'>
-    <td class='errorCase'><div class='testcase'>test_case_login_5: 手机号未注册</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_ft1_5' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_5'>错误</button>
-    <div id='div_ft1_5' class="collapse">  -->
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_ft1_5' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_5'>错误</button>
-    <div id='div_ft1_5' class="collapse in" align="left">
-    <pre>
-    
-ft1_5: Traceback (most recent call last):
-  File "C:\Users\Administrator\Desktop\快递鸟接口自动化\pack_lib\ddt.py", line 145, in wrapper
-    return func(self, *args, **kwargs)
-  File "C:\Users\Administrator\Desktop\快递鸟接口自动化\testcases\test_login.py", line 47, in test_case_login
-    self.assertEqual(excepted['EBusinessID'],res['EBusinessID'])
-KeyError: 'EBusinessID'
-
-
-    </pre>
-    </div>
-    </td>
+<tr id='pt1_5' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_case_kuaidi_5: 中环快递</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
-<tr id='ft1_6' class='none'>
-    <td class='errorCase'><div class='testcase'>test_case_login_6: 手机号包含非数字</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_ft1_6' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_6'>错误</button>
-    <div id='div_ft1_6' class="collapse">  -->
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_ft1_6' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_6'>错误</button>
-    <div id='div_ft1_6' class="collapse in" align="left">
-    <pre>
-    
-ft1_6: Traceback (most recent call last):
-  File "C:\Users\Administrator\Desktop\快递鸟接口自动化\pack_lib\ddt.py", line 145, in wrapper
-    return func(self, *args, **kwargs)
-  File "C:\Users\Administrator\Desktop\快递鸟接口自动化\testcases\test_login.py", line 47, in test_case_login
-    self.assertEqual(excepted['EBusinessID'],res['EBusinessID'])
-KeyError: 'EBusinessID'
-
-
-    </pre>
-    </div>
-    </td>
+<tr id='pt1_6' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_case_kuaidi_6: 迅达速递</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
-<tr id='ft1_7' class='none'>
-    <td class='errorCase'><div class='testcase'>test_case_login_7: 手机号为非手机号码数字</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_ft1_7' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_7'>错误</button>
-    <div id='div_ft1_7' class="collapse">  -->
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_ft1_7' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_7'>错误</button>
-    <div id='div_ft1_7' class="collapse in" align="left">
-    <pre>
-    
-ft1_7: Traceback (most recent call last):
-  File "C:\Users\Administrator\Desktop\快递鸟接口自动化\pack_lib\ddt.py", line 145, in wrapper
-    return func(self, *args, **kwargs)
-  File "C:\Users\Administrator\Desktop\快递鸟接口自动化\testcases\test_login.py", line 47, in test_case_login
-    self.assertEqual(excepted['EBusinessID'],res['EBusinessID'])
-KeyError: 'EBusinessID'
-
-
-    </pre>
-    </div>
-    </td>
+<tr id='pt1_7' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_case_kuaidi_7: E通速递</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
-<tr id='ft1_8' class='none'>
-    <td class='errorCase'><div class='testcase'>test_case_login_8: 手机号长度不足11位</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_ft1_8' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_8'>错误</button>
-    <div id='div_ft1_8' class="collapse">  -->
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_ft1_8' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_8'>错误</button>
-    <div id='div_ft1_8' class="collapse in" align="left">
-    <pre>
-    
-ft1_8: Traceback (most recent call last):
-  File "C:\Users\Administrator\Desktop\快递鸟接口自动化\pack_lib\ddt.py", line 145, in wrapper
-    return func(self, *args, **kwargs)
-  File "C:\Users\Administrator\Desktop\快递鸟接口自动化\testcases\test_login.py", line 47, in test_case_login
-    self.assertEqual(excepted['EBusinessID'],res['EBusinessID'])
-KeyError: 'EBusinessID'
-
-
-    </pre>
-    </div>
-    </td>
-</tr>
-
-<tr id='ft1_9' class='none'>
-    <td class='errorCase'><div class='testcase'>test_case_login_9: 手机号长度超过11位</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_ft1_9' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_9'>错误</button>
-    <div id='div_ft1_9' class="collapse">  -->
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_ft1_9' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_9'>错误</button>
-    <div id='div_ft1_9' class="collapse in" align="left">
-    <pre>
-    
-ft1_9: Traceback (most recent call last):
-  File "C:\Users\Administrator\Desktop\快递鸟接口自动化\pack_lib\ddt.py", line 145, in wrapper
-    return func(self, *args, **kwargs)
-  File "C:\Users\Administrator\Desktop\快递鸟接口自动化\testcases\test_login.py", line 47, in test_case_login
-    self.assertEqual(excepted['EBusinessID'],res['EBusinessID'])
-KeyError: 'EBusinessID'
-
-
-    </pre>
-    </div>
-    </td>
+<tr id='pt1_8' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_case_kuaidi_8: 速递中国</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
 <tr class='passClass warning'>
-    <td>test_login.RegisterTestCase: 注册接口</td>
-    <td class="text-center">11</td>
-    <td class="text-center">11</td>
+    <td>test_kuaidi.TishiyuTestCase: 快递接口</td>
+    <td class="text-center">8</td>
+    <td class="text-center">8</td>
     <td class="text-center">0</td>
     <td class="text-center">0</td>
-    <td class="text-center"><a href="javascript:showClassDetail('c2',11)" class="detail" id='c2'>详细</a></td>
+    <td class="text-center"><a href="javascript:showClassDetail('c2',8)" class="detail" id='c2'>详细</a></td>
 </tr>
 
 <tr id='pt2_1' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_register_01: 成功注册(有昵称)</div></td>
+    <td class='passCase'><div class='testcase'>test_case_kuaidi_1: 传错编码</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
 <tr id='pt2_2' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_register_02: 成功注册(无昵称)</div></td>
+    <td class='passCase'><div class='testcase'>test_case_kuaidi_2: 快递编号超过50位</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
 <tr id='pt2_3' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_register_03: 手机号已被注册</div></td>
+    <td class='passCase'><div class='testcase'>test_case_kuaidi_3: 快递编号小于5位</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
 <tr id='pt2_4' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_register_04: 手机号为空</div></td>
+    <td class='passCase'><div class='testcase'>test_case_kuaidi_4: 快递单号不支持汉字</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
 <tr id='pt2_5' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_register_05: 手机号长度不足11位</div></td>
+    <td class='passCase'><div class='testcase'>test_case_kuaidi_5: 快递单号不支持符号</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
 <tr id='pt2_6' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_register_06: 手机号长度超过11位</div></td>
+    <td class='passCase'><div class='testcase'>test_case_kuaidi_6: id或者key错了-密码错误</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
 <tr id='pt2_7' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_register_07: 手机号包含非数字</div></td>
+    <td class='passCase'><div class='testcase'>test_case_kuaidi_7: id或者key错了-账号错误</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
 <tr id='pt2_8' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_register_08: 不是手机号的11位数</div></td>
-    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
-</tr>
-
-<tr id='pt2_9' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_register_09: 密码为空</div></td>
-    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
-</tr>
-
-<tr id='pt2_10' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_register_10: 密码长度不足6位</div></td>
-    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
-</tr>
-
-<tr id='pt2_11' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_register_11: 密码长度超过18位</div></td>
+    <td class='passCase'><div class='testcase'>test_case_kuaidi_8: id或者key错了-传了特殊字符</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
@@ -443,8 +271,8 @@ KeyError: 'EBusinessID'
     <div id='div_pt3_2' class="collapse in" align="left">
     <pre>
     
-pt3_2: 充值之前用户的余额为109668820.59
-充值之后用户的余额为109718820.59
+pt3_2: 充值之前用户的余额为110326920.75
+充值之后用户的余额为110376920.75
 本次充值的金额50000
 
 
@@ -464,8 +292,8 @@ pt3_2: 充值之前用户的余额为109668820.59
     <div id='div_pt3_3' class="collapse in" align="left">
     <pre>
     
-pt3_3: 充值之前用户的余额为109718820.59
-充值之后用户的余额为109718920.69
+pt3_3: 充值之前用户的余额为110376920.75
+充值之后用户的余额为110377020.85
 本次充值的金额100.1
 
 
@@ -534,8 +362,8 @@ pt3_3: 充值之前用户的余额为109718820.59
     <div id='div_pt4_2' class="collapse in" align="left">
     <pre>
     
-pt4_2: 充值之前用户的余额为109718920.69
-充值之后用户的余额为109718920.59
+pt4_2: 充值之前用户的余额为110377020.85
+充值之后用户的余额为110377020.75
 本次充值的金额0.1
 
 
@@ -595,7 +423,7 @@ pt4_2: 充值之前用户的余额为109718920.69
     <pre>
     
 pt5_1: unittest_百度搜索
-2020-09-27 16_46_22
+2020-10-21 18_14_36
 
 
     </pre>
@@ -610,11 +438,11 @@ pt5_1: unittest_百度搜索
 
 <tr id='total_row' class="text-center active">
     <td>总计</td>
-    <td>40</td>
-    <td>32</td>
+    <td>36</td>
+    <td>36</td>
     <td>0</td>
-    <td>8</td>
-    <td>通过率：80.00%</td>
+    <td>0</td>
+    <td>通过率：100.00%</td>
 </tr>
 </table>
 

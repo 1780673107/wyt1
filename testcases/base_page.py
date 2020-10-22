@@ -116,3 +116,4 @@ class BasePage(object):
     # 上传文件封装
     def input_upload_file(self, element, file_name):
         return element.send_keys(file_name)
+

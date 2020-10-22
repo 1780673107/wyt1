@@ -23,17 +23,21 @@ def url1(data):
 
 data_file_path = os.path.join(DATA_DIR, "cases.xlsx")
 
-id='test1672137'
-RequestType=1002
-keyValue="d9049b87-3094-4419-b95b-6eecfc1aabc0"
-url= "https://api.kdniao.com/Ebusiness/EbusinessOrderHandle.aspx"
+id='1672137'
+RequestType=8001
+keyValue="6896fff5-353c-42cb-837b-5590e022c5ea"
+url= "http://api.kdniao.com/api/dist"
 DataType = "2"
-jsonStr = "{\"OrderCode\":\"\",\"ShipperCode\":\"SF\",\"LogisticCode\":\"118461988807\"}"
+# r'{"OrderCode":"","ShipperCode":"SF","LogisticCode":"118461988807"}'
+jsonStr = r'{"OrderCode":"","ShipperCode":"YD","LogisticCode":"21231213"}'
+
+
 RequestData=url1(jsonStr)
 datasign=url1(base((md5((jsonStr + keyValue)))))
 Poststr='RequestType='+'{}'.format(RequestType)+'&EBusinessID=''{}'.format(id)+'&RequestData=''{}'.format(RequestData)+'&DataSign='+'{}'.format(datasign)+'&DataType=2'
-
-
 print(Poststr)
+
+
+
 
 
